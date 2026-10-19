@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 años de una hermosa decisión</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">UN RECUERDO PARA SIEMPRE</p>
+    <h1><span class="big">7 años</span> de una<br><span class="script">hermosa decisión</span></h1>
+    <p class="subtitle">Tu amistad con Jehová es uno de los regalos más bonitos de tu vida.</p>
+  </div>
+  <p class="side-note">Gracias por<br>tu hermosa<br>decisión ♥</p>
+</header>
+
+<section class="stars-section">
+  <h2 class="kicker">7 estrellas, 7 momentos especiales</h2>
+  <p class="hint">Toca cada estrella para descubrir un recuerdo de estos 7 años.</p>
+  <div class="stars" id="stars"></div>
+  <p id="memoryNote" class="memory" aria-live="polite"></p>
+</section>
+
+<section class="letter-section">
+  <img class="envelope" src="envelope.jpg" alt="Una cartita para ti">
+
+  <article class="letter">
+    <p class="greeting">Mi niña hermosa:</p>
+    <div class="letter-body">
+      <div class="letter-text">
+        <p>¡Felices 7 años de bautismo! ❤️<br>Hoy recuerdo contigo una de las decisiones más bonitas e importantes de tu vida.</p>
+        <p>Me alegra ver que tienes una amistad con Jehová y deseo de corazón que sigas fortaleciéndola. Sé que habrá días fáciles y otros no tanto, pero nunca olvides lo valiosa que eres para él.</p>
+        <p>Admiro el significado de tu decisión y espero poder seguir animándote, acompañándote y celebrando tus logros espirituales.</p>
+        <p>Que nunca te falten motivos para sonreír, fuerzas para seguir adelante y amor por Jehová, como dice filipenses 4:13 "tengo fuerzas para todo gracias a aquel que me da poder".</p>
+        <p class="signature">Con todo mi cariño,<br>tu stich malo. ❤️</p>
+      </div>
+      <blockquote class="verse">
+        <p>“Mas bien sigan creciendo en la bondad inmerecida y el conocimiento de nuestro Señor y Salvador Jesucristo”.</p>
+        <cite>2 Pedro 3:18</cite>
+      </blockquote>
+    </div>
+  </article>
+
+  <button class="mix-btn" id="mixBtn">
+    <span class="note">♫</span> Reproducir<br>nuestra canción
+    <small>Canción 52</small>
+  </button>
+</section>
+
+<section class="player">
+  <img class="cover" src="cover.jpg" alt="Dos canciones, una misma decisión">
+
+  <div class="controls-area">
+    <h3>Mi canción especial</h3>
+    <p class="meta">Canción 52 (versión instrumental)</p>
+    <input type="range" id="seek" min="0" max="100" value="0" aria-label="Progreso">
+    <div class="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+    <div class="buttons">
+      <button class="play" id="play" aria-label="Reproducir">▶</button>
+    </div>
+  </div>
+
+  <aside class="tracklist">
+    <h4>La canción</h4>
+    <ol id="tracks">
+      <li data-i="0" class="on">♫ <span>52. La dedicación cristiana<br><small>(parte final)</small></span></li>
+    </ol>
+  </aside>
+</section>
+
+<footer>Hecho especialmente para ti, con amor. 💗</footer>
+
+<audio id="audio" preload="metadata"></audio>
+<script src="script.js"></script>
+</body>
+</html>
